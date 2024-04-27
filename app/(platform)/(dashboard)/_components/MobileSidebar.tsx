@@ -38,7 +38,6 @@ export const MobileSidebar = () => {
       </Button>
 
       <Sheet open={isOpen}>
-        <SheetClose onClick={onClose}>Hola</SheetClose>
         <SheetContent side="left" className="p-2 pt-10">
           <Sidebar storageKey="d-sidebar-mobile-state" />
         </SheetContent>

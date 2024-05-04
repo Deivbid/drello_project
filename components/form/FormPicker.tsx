@@ -58,6 +58,7 @@ export const FormPicker = ({ id, errors }: FormPickerProps) => {
       <div className="grid grid-cols-3 gap-2 mb-2">
         {images?.map((image) => (
           <div
+            key={image.id}
             id={image.id}
             className={cn(
               "cursor-pointer relative aspect-video group hover:opacity-75 transition bg-muted",
@@ -71,6 +72,7 @@ export const FormPicker = ({ id, errors }: FormPickerProps) => {
             <input
               type="radio"
               id={id}
+              name={id}
               className="hidden"
               checked={selectedImageId === image.id}
               disabled={pending}

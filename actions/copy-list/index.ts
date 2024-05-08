@@ -66,7 +66,7 @@ const handler = async (data: InputType): Promise<ReturnType> => {
     });
   } catch (error) {
     return {
-      error: "Failed to delete list.",
+      error: "Failed to copy list.",
     };
   }
 

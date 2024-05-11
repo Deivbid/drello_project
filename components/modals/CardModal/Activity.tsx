@@ -17,7 +17,7 @@ export const Activity = ({ data }: ActivityProps) => {
         <p className="font-semibold text-neutral-700 mb-2">Activity</p>
         <ol className="mt-2 space-y-4">
           {data?.map((item) => (
-            <ActivityItem data={item} />
+            <ActivityItem key={item.id} data={item} />
           ))}
         </ol>
       </div>

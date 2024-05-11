@@ -11,7 +11,7 @@ export const ModalProvider = () => {
     if (!isMounted) {
       setIsMounted(true);
     }
-  }, []);
+  }, [isMounted]);
 
   if (!isMounted) {
     return null;

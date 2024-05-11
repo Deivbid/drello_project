@@ -51,7 +51,7 @@ export const ListItem = ({ data, index }: ListItemProps) => {
                   )}
                 >
                   {data.cards.map((card, index) => {
-                    return <CardItem data={card} index={index} />;
+                    return <CardItem key={card.id} data={card} index={index} />;
                   })}
                   {provided.placeholder}
                 </ol>

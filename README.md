@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 Drello: Your Project Management Hero 🚀
 
-## Getting Started
+![image](https://i.imgur.com/dcgSalA.png)
 
-First, run the development server:
+Welcome to the hub for Drello, a dynamic full-stack application that’s your go-to for managing projects like a pro! It’s crafted using Next.js 14, React, Prisma, Stripe, Tailwind CSS, and MySQL.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+🌟 **Cool Features You’ll Love:**
+
+- 🔐 Easy account auth (Using Clerk)
+
+- 🏢 Create and manage organizations/workspaces
+
+- 📋 Effortlessly create, rename, and delete boards
+
+- 🖼️ Stunning random cover images via Unsplash API
+
+- 📊 Activity logs to keep track of all actions
+
+- 🛠️ Super flexible lists and cards with drag & drop
+
+- 💳 Stripe integration for premium features
+
+- 🌐 Stylish landing page to welcome users
+
+- 📚 Robust MySQL database with Prisma ORM
+
+- 💨 Quick UI adjustments with shadcnUI & TailwindCSS
+
+### Getting Started
+
+Make sure you have **Node version 18.x.x** installed to run smoothly!
+
+### 🛠 Cloning the repository
+
+```shell
+
+git  clone  https://github.com/AntonioErdeljac/next13-trello.git
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 📦 Install packages
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```shell
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+npm i
+// or
+bun
 
-## Learn More
+```
 
-To learn more about Next.js, take a look at the following resources:
+### 🔧 Setup .env file
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```shell
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=
+DATABASE_URL=
+NEXT_PUBLIC_UNSPLASH_ACCESS_KEY=
+STRIPE_API_KEY=
+NEXT_PUBLIC_APP_URL=
+STRIPE_WEBHOOK_SECRET=
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### 💽 Setup Prisma with MySQL Database (I used Neon)
 
-## Deploy on Vercel
+```shell
+npx prisma generate
+npx prisma db push
+// or
+bunx prisma generate
+bunx prisma db push
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 🚀 Start the app
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```shell
+npm run dev
+// or
+bun dev
+```
